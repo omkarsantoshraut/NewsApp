@@ -9,22 +9,22 @@ import Foundation
 
 struct NewsModel: Codable {
     let articles: [article]
-    let status: String
-    let totalResults: Int
+    let status: String?
+    let totalResults: Int?
 }
 
 struct article: Codable {
     let source: articleSource
     let author: String?
-    let title: String
-    let description: String
-    let url: String
+    let title: String?
+    let description: String?
+    let url: String?
     let urlToImage: String?
-    let publishedAt: String
-    let content: String
+    let publishedAt: String?
+    let content: String?
 }
 
 struct articleSource: Codable {
     let id: String?
-    let name: String
+    let name: String?
 }
